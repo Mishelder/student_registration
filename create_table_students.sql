@@ -13,4 +13,5 @@ alter table students add constraint unique_email unique(email);
 insert into students (first_name,last_name,email)
 values ('Misha','Skorohodov','misha@luv2code.com');
 
+delete from students where id =1;
 commit;
