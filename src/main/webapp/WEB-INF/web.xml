@@ -3,4 +3,50 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <welcome-file-list>
+        <welcome-file>StudentShowListServlet</welcome-file>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>StudentShowListServlet</servlet-name>
+        <servlet-class>com.misha.jdbc_servlets.controller.StudentShowListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentShowListServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>com.misha.jdbc_servlets.controller.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/add_student</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoadStudentServlet</servlet-name>
+        <servlet-class>com.misha.jdbc_servlets.controller.LoadStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoadStudentServlet</servlet-name>
+        <url-pattern>/load_student</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <servlet-class>com.misha.jdbc_servlets.controller.UpdateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <url-pattern>/update_student</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>com.misha.jdbc_servlets.controller.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/delete_student</url-pattern>
+    </servlet-mapping>
 </web-app>
